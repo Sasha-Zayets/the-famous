@@ -1,0 +1,88 @@
+.paintings {
+    padding: 45px 0;
+
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -13px;
+    }
+
+    &__card {
+        width: calc((100% / 4) - 13px);
+        margin-right: 13px;
+        min-height: 328px;
+    }
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #343030;
+}
+
+.card {
+    $card: '.card';
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E1E1E1;
+
+    &__image {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        font-size: 18px;
+        color: #343030;
+        line-height: 150%;
+        flex-grow: 2;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        padding: 0 24px 24px;
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__old-price {
+        text-decoration: line-through;
+        font-weight: 300;
+        color: #A0A0A0;
+        font-size: 14px;
+        line-height: 150%;
+        display: block;
+    }
+
+    &__current-price {
+        color: #343030;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__buy-status {
+        color: #343030;
+    }
+
+    &--sold {
+        opacity: 0.5;
+
+        #{$card}__content {
+            padding-bottom: 36px;
+        }
+    }
+}

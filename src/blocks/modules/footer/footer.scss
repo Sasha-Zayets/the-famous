@@ -1,0 +1,52 @@
+.footer {
+    background: #ECEAEA;
+    padding: 24px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 48px;
+    }
+
+    &__phone {
+        margin-right: 52px;
+    }
+
+    &__navbar {
+        flex-grow: 2;
+    }
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+        fill: #555555;
+        margin-right: 9px;
+    }
+
+    &__value {
+        font-size: 14px;
+        color: #555555;
+    }
+}
+
+.address {
+    &__icon {
+        width: 14px;
+        height: 14px;
+        fill: #555555;
+        margin-right: 10px;
+    }
+
+    &__value {
+        font-size: 14px;
+        color: #555555;
+    }
+}

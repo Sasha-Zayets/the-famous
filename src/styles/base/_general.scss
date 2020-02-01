@@ -1,0 +1,67 @@
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+button, input {
+    border: none;
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 2;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+   .container {
+        max-width: 720px;
+   }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
